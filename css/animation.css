@@ -1,1 +1,201 @@
-/* 大图一 */
+/* 导航条 */
+.header{
+    transition: all 1s;
+}
+.header_back{
+    background: rgba(0,0,0,.5);
+}
+.header_back .header_logo,
+.header_back .nav{
+    color: #fff;
+}
+
+.active{
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+/* 第一屏 */
+.text1,.phone1, .phoneShadow{
+   opacity: 0;
+   transition: all 1s; 
+}
+
+.text1_init,.phoneShadow_init{
+    transform: translate(0,100%)
+}
+
+.text1_done,.phone1_done,.phoneShadow_done{
+    opacity: 1;
+    transform: translate(0,0)
+}
+
+
+.phone1_init{
+    opacity: 0;
+    transform: translate(0,-100%)
+}
+/* 第二屏 */
+.screen2_title,.screen2_text, .screen2_img{
+    opacity: 0;
+    transition: all 1s; 
+ }
+
+ .screen2_text_init, .screen2_img_init{
+    transform: translate(0,100%)
+ }
+
+ .screen2_title_done,.screen2_text_done, .screen2_img_done{
+    opacity: 1;
+    transform: translate(0,0)
+ }
+
+ .screen2_title_init{
+    transform: translate(0,-100%)
+ }
+
+ .label1,.label2,.label3{
+    opacity: 0;
+    transition: all 2s; 
+ }
+
+ .label1_init{
+    left: -1000px;
+ }
+
+ .label2_init{
+    left: 3125px;
+ }
+
+ .label3_init{
+    left: 3950px;
+}
+
+ .label1_done,.label2_done,.label3_done{
+    opacity: 1;
+    left: 50%;
+ }
+ /* 红点放大缩小 */
+ @-webkit-keyframes bounce{
+     0%,100%{
+        transform: scale(0);
+     }
+     50%{
+        transform: scale(1);
+     }
+ }
+
+ .dot:before,.dot:after{
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: rgba(255,0,0,0.4);
+    border-radius: 50%;
+    margin: 5px 0;
+    animation: bounce 2s infinite;
+ }
+
+ .dot:before{
+    animation:  bounce 2s infinite 1s;
+ }
+
+ .label1 .dot:before,.label1 .dot:after{
+     right: 0;
+ }
+
+ /* 第三屏 */
+ .screen3_img,.screen3_title,.screen3_text,.pane{
+    opacity: 0;
+    transition: all 1s; 
+ }
+
+ .screen3_title_init{
+    transform: translate(0,-100%)
+ }
+
+ .screen3_title_done{
+    opacity: 1;
+    transform: translate(0,0)
+ }
+
+ .screen3_text_init,.screen3_img_init{
+    transform: translate(0,100%)
+ }
+
+ .screen3_text_done,.screen3_img_done{
+    opacity: 1;
+    transform: translate(0,0);
+ }
+
+ .pane_init{
+    transform: scale(0);
+ }
+
+ .pane_done{
+    opacity: 1;
+    transform: scale(1);
+ }
+   /* 摆动动画 */
+   @keyframes swing
+   {
+        from {
+            transform:rotate(-5deg);
+        }
+        to {
+            transform:rotate(5deg);
+        }
+   }
+
+/* 第四屏 */
+.screen4_title,.screen4_text{
+    opacity: 0;
+    transition: all 1s; 
+}
+
+.screen4_title_init{
+    transform: translate(0,-100%)
+}
+
+.screen4_text_init{
+    transform: translate(0,100%)
+}
+
+.screen4_title_done,.screen4_text_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* 第五屏 */
+.screen5_title,.screen5_text,.screen5_img{
+    opacity: 0;
+    transition: all 1s; 
+}
+
+.screen5_title_init{
+    transform: translate(0,-100%)
+}
+
+.screen5_text_init{
+    transform: translate(0,100%)
+}
+
+.screen5_title_done,.screen5_text_done{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.screen5_img_init{
+    transform: scale(0.5);
+ }
+
+ .screen5_img_done{
+    opacity: 1;
+    transform: scale(1);
+ }
+
+ /* 侧栏 */
+ .side_active{
+     color: red;
+ }
