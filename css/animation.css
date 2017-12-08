@@ -133,12 +133,28 @@
 /* 摆动动画 */
 @keyframes swing
 {
-    from {
-        transform:rotate(-5deg);
-    }
-    to {
-        transform:rotate(5deg);
-    }
+    0%{ transform:rotate(0deg) }
+    10%{ transform:rotate(3deg) }
+    20%{ transform:rotate(-3deg) }
+    30%{ transform:rotate(2deg) }
+    40%{ transform:rotate(-2deg) }
+    50%{ transform:rotate(1deg) }
+    60%{ transform:rotate(-1deg) }
+    70%{ transform:rotate(0deg) }
+    100%{ transform:rotate(0deg) }
+}
+
+.pane_done .pane-item_1{
+    -webkit-animation: swing 2s infinite ease-in-out .5s;
+}
+.pane_done .pane-item_2{
+    -webkit-animation: swing 2s infinite ease-in-out .8s;
+}
+.pane_done .pane-item_3{
+    -webkit-animation: swing 2s infinite ease-in-out 1.3s;
+}
+.pane_done .pane-item_4{
+    -webkit-animation: swing 2s infinite ease-in-out 1.5s;
 }
 
 /* 第四屏 */
