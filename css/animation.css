@@ -167,6 +167,30 @@
     transform: translate(0,0);
 }
 
+.item_one{
+    transition: all 1s 0.5s;
+}
+.item_two{
+    transition: all 1s 1s;
+}
+.item_three{
+    transition: all 1s 1.5s;
+}
+.item_four{
+    transition: all 1s 2s;
+}
+
+.item_one_init,.item_two_init,.item_three_init,.item_four_init{
+    opacity: 0;
+    transform: translate(0,100%)
+}
+
+.item_one_done,.item_two_done,.item_three_done,.item_four_done{
+    opacity: 1;
+    transform: translate(0,0)
+}
+
+
 /* 第五屏 */
 .screen5_title,.screen5_text,.screen5_img{
     opacity: 0;
