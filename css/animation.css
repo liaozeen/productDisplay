@@ -35,26 +35,26 @@
 .screen2_title_init{
     opacity: 0;
     transform: translate(0,-100%)
- }
+}
 
- .screen2_text_init, .screen2_img_init{
+.screen2_text_init, .screen2_img_init{
     opacity: 0;
     transform: translate(0,100%)
- }
+}
 
- .screen2_title_done,.screen2_text_done, .screen2_img_done{
+.screen2_title_done,.screen2_text_done, .screen2_img_done{
     opacity: 1;
     transform: translate(0,0);
     transition: all 1s; 
- }
+}
 
- .label1_init{
+.label1_init{
     left: 0;
- }
+}
 
- .label2_init,.label3_init{
+.label2_init,.label3_init{
     left: 150%;
- }
+}
 
  .label1_done{
     left: 50%;
@@ -63,22 +63,22 @@
 .label2_done{
     left: 50%;
     transition: all 1s 1.2s; 
- }
- .label3_done{
+}
+.label3_done{
     left: 50%;
     transition: all 1s 1.5s; 
- }
- /* 红点放大缩小 */
- @-webkit-keyframes bounce{
-     0%,100%{
-        transform: scale(0);
-     }
-     50%{
-        transform: scale(1);
-     }
- }
+}
+/* 红点放大缩小 */
+@-webkit-keyframes bounce{
+    0%,100%{
+    transform: scale(0);
+    }
+    50%{
+    transform: scale(1);
+    }
+}
 
- .dot:before,.dot:after{
+.dot:before,.dot:after{
     content: ' ';
     display: block;
     width: 20px;
@@ -88,61 +88,58 @@
     border-radius: 50%;
     margin: 5px 0;
     animation: bounce 2s infinite;
- }
+}
 
- .dot:before{
+.dot:before{
     animation:  bounce 2s infinite 1s;
- }
+}
 
- .label1 .dot:before,.label1 .dot:after{
-     right: 0;
- }
+.label1 .dot:before,.label1 .dot:after{
+    right: 0;
+}
 
- /* 第三屏 */
- .screen3_img,.screen3_title,.screen3_text,.pane{
+/* 第三屏 */
+.screen3_title_init{
     opacity: 0;
-    
- }
-
- .screen3_title_init{
     transform: translate(0,-100%)
- }
+}
 
- .screen3_text_init,.screen3_img_init{
+.screen3_text_init,.screen3_img_init{
+    opacity: 0;
     transform: translate(0,100%)
- }
+}
 
- .pane_init{
+.pane_init{
     transform: scale(0);
- }
+}
 
- .screen3_title_done{
+.screen3_title_done{
     opacity: 1;
     transform: translate(0,0);
     transition: all 1s; 
- }
+}
 
- .screen3_text_done,.screen3_img_done{
+.screen3_text_done,.screen3_img_done{
     opacity: 1;
     transform: translate(0,0);
     transition: all 1s; 
- }
+}
 
- .pane_done{
+.pane_done{
     opacity: 1;
     transform: scale(1);
     transition: all 1s; 
- }
-   /* 摆动动画 */
-   @keyframes swing
-   {
-        from {
-            transform:rotate(-5deg);
-        }
-        to {
-            transform:rotate(5deg);
-        }
-   }
+}
+/* 摆动动画 */
+@keyframes swing
+{
+    from {
+        transform:rotate(-5deg);
+    }
+    to {
+        transform:rotate(5deg);
+    }
+}
 
 /* 第四屏 */
 .screen4_title_init{
@@ -212,7 +209,7 @@
     transition: all 1s; ;
 }
 
- /* 侧栏 */
- .side_active{
-     color: red;
- }
+/* 侧栏 */
+.side_active{
+    color: red;
+}
