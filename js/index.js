@@ -385,7 +385,8 @@ window.onload = function(){
     //跟踪输入的数值实时计算总价
     let input = getElem('.pay_amount');
     input.onkeyup = function(e){
-        totalPrice(e.target)
+        this.value=this.value.replace(/\D/g,'');
+        totalPrice(e.target);
     }
 }
 //页面滚动时触发相应元素的动画
