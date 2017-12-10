@@ -320,25 +320,25 @@ function handleClick(event){
         case 'label_color1' :
             removeChecked('.radio_color');
             addCls(target,'checked');
-            changeImg('/img/phone-1.png');
+            changeImg('img/phone-1.png');
             totalPrice(target);
             break;
         case 'label_color2' :
             removeChecked('.radio_color');
             addCls(target,'checked');
-            changeImg('/img/phone-2.png');
+            changeImg('img/phone-2.png');
             totalPrice(target);
             break;
         case 'label_color3' :
             removeChecked('.radio_color');
             addCls(target,'checked');
-            changeImg('/img/phone-3.png');
+            changeImg('img/phone-3.png');
             totalPrice(target);
             break;
         case 'label_color4' :
             removeChecked('.radio_color');
             addCls(target,'checked');
-            changeImg('/img/phone-4.png');
+            changeImg('img/phone-4.png');
             totalPrice(target);
             break;
         case 'label_memory1' :
