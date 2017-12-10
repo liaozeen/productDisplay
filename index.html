@@ -10,7 +10,7 @@
 <header class="header">
   <div class="header_logo">  
     <img src="img/logo.png">
-    <div id="title">MO手机</div>
+    <div id="title">摩亚手机</div>
   </div>
   <div id="nav">
     <a href="#screen_one"  class="nav item1 active">外观</a>
@@ -18,7 +18,7 @@
     <a href="#screen_three"  class="nav item3">配置</a>
     <a href="#screen_four"  class="nav item4">型号</a>
     <a href="#screen_five"  class="nav item5">其他</a>
-    <a href="#"  id="buy">立即购买</a>
+    <a href="#"  id="buy" class="pay">立即购买</a>
   </div>
 </header>
 <div class="screen_one" id="screen_one">
@@ -121,8 +121,76 @@
   <img class="screen5_img" src="img/bg-screen-5.png">
 </div>
 <div class="screen_six">
-  <a href="#" id="buy2">立即购买</a>
+  <a href="#" id="buy2" class="pay">立即购买</a>
 </div>
+<div class="dialog_background"></div>
+<div class="dialog" id="dialog">
+  <div class="dialog_top">
+    <span class="dialog_title">选择手机型号</span>
+    <span id="dialog_close">&times;</span>
+  </div>
+  <div class="dialog_main">
+    <div class="dialog_main_detail">
+      <div class="dialog_main_phone"></div>
+      <div class="dialog_main_parameter">
+        <div class="pt_item">
+          <span class="pt_item_title">机身颜色</span>
+          <ul class="pt_item_ul">
+            <li>
+              <input type="radio" name="color" id="color1" class="input_radio" value="中国红">
+              <label for="color1" class="radio_color checked" id="label_color1">中国红</label>
+            </li>
+            <li>
+              <input type="radio" name="color" id="color2" class="input_radio" value="土豪金">
+              <label for="color2" class="radio_color" id="label_color2">土豪金</label>
+            </li>
+            <li>
+              <input type="radio" name="color" id="color3" class="input_radio" value="太空灰">
+              <label for="color3" class="radio_color" id="label_color3">太空灰</label>
+            </li>
+            <li>
+              <input type="radio" name="color" id="color4" class="input_radio" value="绅士黑">
+              <label for="color4" class="radio_color" id="label_color4">绅士黑</label>
+            </li>
+          </ul>
+        </div>
+        <div class="pt_item">
+            <span class="pt_item_title">空间容量</span>
+            <ul class="pt_item_ul">
+              <li>
+                <input type="radio" name="memory" id="memory1" class="input_radio memory" value="16G">
+                <label for="memory1" class="radio_memory" id="label_memory1">16G</label>
+              </li>
+              <li>
+                <input type="radio" name="memory" id="memory2" class="input_radio memory" value="32G">
+                <label for="memory2" class="radio_memory" id="label_memory2">32G</label>
+              </li>
+              <li>
+                <input type="radio" name="memory" id="memory3" class="input_radio memory" value="64G">
+                <label for="memory3" class="radio_memory" id="label_memory3">64G</label>
+              </li>
+            </ul>
+        </div>
+        <div class="pt_item">
+          <span class="pt_item_title">购买数量</span>
+          <div class="pay_num">
+            <input type="text" class="pay_amount" name="amount" value="1" 
+             onkeyup="this.value=this.value.replace(/\D/g,'')" 
+             onafterpaste="this.value=this.value.replace(/\D/g,'')">
+            <span id="pay_minus">&or;</span>
+            <span id="pay_add">&and;</span>
+          </div>
+        </div>
+      </div>
+      <div class="balance">
+        <sapn class="selected"></sapn>
+        <span class="clearance" id="clearance">去结算</span>
+        <span class="rate">0</span>
+        <span class="symbol">&yen;</span>     
+      </div>
+    </div>
+    <div class="dialog_main_pay"></div>
+  </div>
 </div>
 <footer>© 2017 liaozeen.com 京ICP备0000001号</footer>
 <div class="side_nav">
