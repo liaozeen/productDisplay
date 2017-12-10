@@ -365,6 +365,8 @@ window.onload = function(){
     for( k in screenAnimationElements){
         setAnimationInit(k);
     }
+
+    changeImg('img/phone-1.png');
     
     setTimeout(function(){//保证页面刷新时有动画效果
         switchAnimation();

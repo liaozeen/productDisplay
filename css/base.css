@@ -520,7 +520,7 @@ footer{
     height: 180px;
     top: 0;
     left: 0;
-    background-image: url('img/phone-1.png');
+    /*background-image: url('img/phone-1.png');*/
     background-size:150px 180px;
     background-repeat:no-repeat;
     background-position:180% 50%;
