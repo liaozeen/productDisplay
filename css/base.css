@@ -30,7 +30,7 @@ html,body{
 
 .header #nav{
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 10px;
     width: 635px;
 }
@@ -47,15 +47,18 @@ html,body{
 }
 
 #buy{
+    position: absolute;
+    top: 10px;
+    right: 20px;
     display: inline-block;
     width: 100px;
     padding: 10px 0;
     text-align: center;
-    text-decoration: none;
     font-size: 14px;
     color:#fff;
     background: black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .nav:hover{

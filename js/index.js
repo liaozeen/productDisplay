@@ -77,7 +77,7 @@ function setAnimationInit(screenClass){
 }
 //根据滚动条位置触发对应区域的动画
 function switchAnimation(){
-    let top = document.documentElement.scrollTop;
+    let top = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(top>-1){
         setAnimationDone('.screen_one');
